@@ -1,5 +1,4 @@
 @import 'styles/mixin/media';
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 .funky-boxes {
   .container {
@@ -70,6 +69,7 @@
 
         .card {
           border-radius: 10px;
+          width: 100%;
         }
 
         .profile {

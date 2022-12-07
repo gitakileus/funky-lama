@@ -1,20 +1,20 @@
 // import { useMemo } from 'react';
 // import { WalletMultiButton } from '@solana/wallet-adapter-react-ui';
 // import { useConnection, useWallet } from '@solana/wallet-adapter-react';
-import SolanaIcon from 'assets/icons/solana.svg';
+import SolanaIcon from 'assets/icons/solana.svg'
 
 type FunkyBoxProps = {
-	imageUrl: string;
-	videoUrl: string;
-	value: number;
-};
+	imageUrl: string
+	videoUrl: string
+	value: number
+}
 
 type Props = {
-	box: FunkyBoxProps;
-};
+	box: FunkyBoxProps
+}
 
 const FunkyBox = ({ box }: Props) => {
-	const { imageUrl, videoUrl, value } = box;
+	const { imageUrl, videoUrl, value } = box
 
 	// const { connection } = useConnection();
 	// const wallet = useWallet();
@@ -23,11 +23,11 @@ const FunkyBox = ({ box }: Props) => {
 	// }, [wallet.publicKey]);
 
 	return (
-		<div className='box'>
-			<img src={imageUrl} alt='' width='600px' height='600px' className='card' />
-			<div className='profile'>
-				<div className='solana-logo'>
-					<img src={SolanaIcon} alt='' width='40px' height='40px' />
+		<div className="box">
+			<img src={imageUrl} alt="" className="card" />
+			<div className="profile">
+				<div className="solana-logo">
+					<img src={SolanaIcon} alt="" width="40px" height="40px" />
 				</div>
 				<span>{value}</span>
 				{/* <WalletMultiButton className='wallet-connect'>
@@ -35,6 +35,6 @@ const FunkyBox = ({ box }: Props) => {
 				</WalletMultiButton> */}
 			</div>
 		</div>
-	);
-};
-export default FunkyBox;
+	)
+}
+export default FunkyBox
