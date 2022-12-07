@@ -19,7 +19,7 @@ const LazeLoft = () => {
 						alt="background"
 						className="background"
 					/>
-					<video ref={videoRef} className="video-background" loop>
+					<video ref={videoRef} className="video-background" loop muted>
 						<source src="/videos/laze-loft.mp4" type="video/mp4" />
 					</video>
 					<span className="place-text">PLACE FOR THE TEXT</span>
