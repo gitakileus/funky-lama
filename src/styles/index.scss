@@ -1,0 +1,32 @@
+@import "./mixin/effect";
+@import "./mixin/fonts";
+@import "./mixin/layout";
+@import "./mixin/variant";
+
+body {
+  font-family: "DM sans";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  height: 100%;
+  background-color: var(--secondary);
+
+  main {
+    display: flex;
+    justify-content: center;
+  }
+}

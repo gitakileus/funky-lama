@@ -1,0 +1,148 @@
+@import 'styles/mixin/media';
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.funky-boxes {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 24px;
+    margin-right: 24px;
+    max-width: 1280px;
+    width: 100%;
+
+    @include media-sm {
+      margin-left: 12px;
+      margin-right: 12px;
+    }
+
+    h1.title {
+      max-width: 912px;
+      font-size: 40px;
+      line-height: 1.8;
+      font-family: 'Press Start 2P', cursive;
+      font-weight: 700;
+      text-align: center;
+      letter-spacing: 0.3px;
+      color: #323232;
+
+      @include media-xl {
+        font-size: 32px;
+      }
+
+      @include media-md {
+        font-size: 25px;
+      }
+    }
+
+    h5.description {
+      margin-top: 24px;
+      font-size: 18px;
+      line-height: 40px;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+      color: #000;
+    }
+
+    .boxes {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 24px;
+      margin-top: 48px;
+
+      @include media-lg {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+      }
+
+      @include media-sm {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+      }
+
+      .box {
+        box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+        border: 1px solid #434343;
+        border-radius: 10px;
+        padding: 16px;
+        background-color: #323232;
+        backdrop-filter: blur(42px);
+
+        .card {
+          border-radius: 10px;
+        }
+
+        .profile {
+          display: flex;
+          align-items: center;
+          margin-top: 10px;
+
+          .solana-logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 999px;
+            width: 60px;
+            height: 60px;
+            background-color: rgb(15, 14, 14);
+          }
+
+          span {
+            margin-left: 12px;
+            font-size: 18px;
+            line-height: 1.33;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 300;
+            color: #fff;
+          }
+
+          .wallet-adapter-dropdown {
+            margin-left: auto;
+
+            .wallet-adapter-button-start-icon {
+              display: none;
+            }
+          }
+
+          button,
+          .wallet-connect {
+            margin-left: auto;
+            box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+            border: 2px solid #aa99f2;
+            border-radius: 10px;
+            padding: 10px 30px;
+            background: linear-gradient(275.68deg, #B386FE 5.91%, #92CFEB 50.2%, #A7FE89 101.53%);
+            background-color: #898989;
+            font-size: 15px;
+            line-height: 21px;
+            font-weight: 500;
+            color: #000;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .responsive {
+      margin-top: 40px;
+      font-size: 25px;
+      line-height: 1.167;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+      color: #B18CFD;
+      cursor: pointer
+    }
+
+    .recent-open {
+      h2 {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        font-size: 30px;
+        line-height: 1.2;
+        font-family: 'Arial';
+        font-weight: 500;
+        color: #323232;
+      }
+    }
+  }
+}
