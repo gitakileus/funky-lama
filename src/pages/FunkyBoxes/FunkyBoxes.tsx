@@ -21,17 +21,18 @@ const FunkyBoxes = () => {
 	useEffect(() => {
 		if (openedBox === -1) return
 		videoRef.current?.play()
-		setTimeout(() => {
-			setOpenedBox(-1)
-			handleShowResult()
-		}, 7000)
 	}, [openedBox])
+
+	const handleVideoFinished = () => {
+		setOpenedBox(-1)
+		handleShowResult()
+	}
 
 	const handleShowResult = () => {
 		setIsOpen(true)
 		setTimeout(() => {
 			setIsOpen(false)
-		}, 2000)
+		}, 3000)
 	}
 
 	return (
@@ -56,7 +57,7 @@ const FunkyBoxes = () => {
 			</div>
 			{openedBox !== -1 ? (
 				<div className="video-box">
-					<video ref={videoRef}>
+					<video ref={videoRef} onEnded={handleVideoFinished}>
 						<source src={boxes[openedBox].videoUrl} type="video/mp4" />
 					</video>
 				</div>
