@@ -1,6 +1,6 @@
-// import { useMemo } from 'react';
-// import { WalletMultiButton } from '@solana/wallet-adapter-react-ui';
-// import { useConnection, useWallet } from '@solana/wallet-adapter-react';
+import { useMemo } from 'react'
+import { useWallet } from '@solana/wallet-adapter-react'
+import { WalletMultiButton } from '@solana/wallet-adapter-react-ui'
 import SolanaIcon from 'assets/icons/solana.svg'
 
 type FunkyBoxProps = {
@@ -11,16 +11,17 @@ type FunkyBoxProps = {
 
 type Props = {
 	box: FunkyBoxProps
+	isOpen: boolean
+	onClick: () => void
 }
 
-const FunkyBox = ({ box }: Props) => {
-	const { imageUrl, videoUrl, value } = box
+const FunkyBox = ({ box, isOpen, onClick }: Props) => {
+	const { imageUrl, value } = box
 
-	// const { connection } = useConnection();
-	// const wallet = useWallet();
-	// const isConnected = useMemo(() => {
-	// 	return !!wallet.publicKey;
-	// }, [wallet.publicKey]);
+	const wallet = useWallet()
+	const isConnected = useMemo(() => {
+		return !!wallet.publicKey
+	}, [wallet.publicKey])
 
 	return (
 		<div className="box">
@@ -30,9 +31,13 @@ const FunkyBox = ({ box }: Props) => {
 					<img src={SolanaIcon} alt="" width="40px" height="40px" />
 				</div>
 				<span>{value}</span>
-				{/* <WalletMultiButton className='wallet-connect'>
-					{!isConnected ? 'Select Wallet' : 'Open'}
-				</WalletMultiButton> */}
+				{!isConnected ? (
+					<WalletMultiButton className="wallet-connect">Select Wallet</WalletMultiButton>
+				) : (
+					<button className="wallet-connect" onClick={onClick}>
+						{isOpen ? 'Processing...' : 'Open'}
+					</button>
+				)}
 			</div>
 		</div>
 	)
