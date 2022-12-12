@@ -134,6 +134,8 @@
     }
 
     .recent-open {
+      width: 100%;
+
       h2 {
         margin-top: 50px;
         margin-bottom: 50px;
@@ -141,8 +143,111 @@
         line-height: 1.2;
         font-family: 'Arial';
         font-weight: 500;
+        text-align: center;
         color: #323232;
       }
+
+      .recent-opened-boxes {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+
+        div {
+          position: relative;
+          display: flex;
+          align-items: center;
+          border: 1px solid #434343;
+          border-radius: 12px;
+          padding: 16px;
+          background-color: #323232;
+
+          img {
+            border-radius: 100px;
+          }
+
+          p {
+            margin-left: 12px;
+            color: white;
+          }
+
+          span {
+            position: absolute;
+            bottom: 8px;
+            right: 8px;
+            color: #AAA;
+          }
+        }
+      }
+
+      @include media-lg {
+        h2 {
+          margin-bottom: 24px;
+        }
+
+        .recent-opened-boxes {
+          grid-template-columns: repeat(1, minmax(0, 1fr));
+          gap: 12px;
+
+          div {
+            padding: 12px;
+
+            span {
+              font-size: 12px;
+              bottom: 4px;
+            }
+          }
+        }
+      }
+    }
+
+    .divider {
+      margin: 48px 0;
+      border: 1px solid #f787f4;
+      height: 1px;
+      width: 100%;
+
+      @include media-lg {
+        margin: 24px 0;
+      }
+    }
+
+    .gradient-text {
+      font-size: 48px;
+      font-weight: bold;
+      background: linear-gradient(135deg, #B386FE 5.91%, #92CFEB 50.2%, #A7FE89 101.53%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .social-links {
+      display: flex;
+      gap: 16px;
+      margin: 12px 0;
+
+      a {
+        display: flex;
+        border-radius: 17px;
+        width: 34px;
+        height: 34px;
+        background-color: #89affd;
+
+        svg {
+          margin: auto;
+          width: 20px;
+          height: 20px;
+        }
+
+        &:hover {
+          background-color: #f784f8;
+        }
+      }
+    }
+
+    .copyright {
+      display: none;
+      margin-bottom: 12px;
+      font-size: 14px;
     }
   }
 
