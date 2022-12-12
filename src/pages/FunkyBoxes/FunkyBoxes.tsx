@@ -86,6 +86,36 @@ const FunkyBoxes = () => {
 			time: '2022-12-12 2:00:00',
 		},
 	])
+	const [yourOpens, setYourOpens] = useState<Array<any>>([
+		{
+			boxId: 1,
+			walletAddress: '4FBqjSUBsYrkV2nSaSQ2fiythmSXRrQhXX3bN1A34M6R',
+			betAmount: 0.5,
+			winAmount: 1,
+			time: '2022-12-12 8:18:00',
+		},
+		{
+			boxId: 0,
+			walletAddress: '4FBqjSUBsYrkV2nSaSQ2fiythmSXRrQhXX3bN1A34M6R',
+			betAmount: 0.5,
+			winAmount: 1,
+			time: '2022-12-12 8:15:00',
+		},
+		{
+			boxId: 0,
+			walletAddress: '4FBqjSUBsYrkV2nSaSQ2fiythmSXRrQhXX3bN1A34M6R',
+			betAmount: 0.5,
+			winAmount: 1,
+			time: '2022-12-12 7:00:00',
+		},
+		{
+			boxId: 1,
+			walletAddress: '4FBqjSUBsYrkV2nSaSQ2fiythmSXRrQhXX3bN1A34M6R',
+			betAmount: 0.5,
+			winAmount: 1,
+			time: '2022-12-12 4:00:00',
+		},
+	])
 	const videoRef = useRef<HTMLVideoElement>(null)
 
 	//triggers when a user select the box to open
@@ -158,6 +188,22 @@ const FunkyBoxes = () => {
 						))}
 					</div>
 				</div>
+				<div className="recent-open">
+					<h2>Your Opens</h2>
+					<div className="recent-opened-boxes">
+						{yourOpens.map((item, index) => (
+							<div key={index}>
+								<img src={boxes[item.boxId].imageUrl} alt="" width={54} height={54} />
+								<p>
+									{shortenAddress(item.walletAddress)} opened {item.betAmount} SOL and won{' '}
+									{item.winAmount} SOL
+								</p>
+								<span>{timeDiff(item.time)}</span>
+							</div>
+						))}
+					</div>
+				</div>
+
 				<div className="divider" />
 				<span className="gradient-text">LOOTIES</span>
 				<div className="social-links">
