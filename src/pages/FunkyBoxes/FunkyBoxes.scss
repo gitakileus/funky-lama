@@ -262,6 +262,18 @@
     align-content: center;
     justify-content: center;
     backdrop-filter: blur(12px);
+
+    video {
+      width: 600px;
+
+      @include media-sm {
+        width: 420px;
+      }
+
+      @include media-xs {
+        width: 300px;
+      }
+    }
   }
 
   .result-modal {
