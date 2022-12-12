@@ -256,6 +256,9 @@
     z-index: 100;
     top: 0;
     left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -264,7 +267,10 @@
     backdrop-filter: blur(12px);
 
     video {
+      border: 10px solid #323232;
+      border-radius: 20px;
       width: 600px;
+      height: fit-content;
 
       @include media-sm {
         width: 420px;

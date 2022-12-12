@@ -205,7 +205,7 @@ const FunkyBoxes = () => {
 				</div>
 
 				<div className="divider" />
-				<span className="gradient-text">LOOTIES</span>
+				{/* <span className="gradient-text">LOOTIES</span>
 				<div className="social-links">
 					<a href="https://discord.com">
 						<DiscordIcon />
@@ -213,7 +213,7 @@ const FunkyBoxes = () => {
 					<a href="https://twitter.com">
 						<TwitterIcon />
 					</a>
-				</div>
+				</div> */}
 				<p className="copyright">&copy;2022 Looties, All rights reserved.</p>
 			</div>
 			{openedBox !== -1 ? (
