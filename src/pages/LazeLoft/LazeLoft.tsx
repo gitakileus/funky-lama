@@ -25,23 +25,8 @@ const LazeLoft = () => {
 					<span className="place-text">Explore Funky Utilities</span>
 					<span className="space-text"></span>
 				</div>
-				<div className="title">LOREM IPSUM DOLOR SIT</div>
-				<div className="description">
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel dignissim
-						mauris. Etiam eleifend rutrum justo nec viverra. Etiam congue iaculis tortor,
-						non ullamcorper sapien blandit sit amet. Suspendisse viverra feugiat
-						scelerisque. Quisque sed neque vitae elit hendrerit ultricies. Maecenas risus
-						orc.
-					</p>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel dignissim
-						mauris. Etiam eleifend rutrum justo nec viverra. Etiam congue iaculis tortor,
-						non ullamcorper sapien blandit sit amet. Suspendisse viverra feugiat
-						scelerisque. Quisque sed neque vitae elit hendrerit ultricies. Maecenas risus
-						orc.
-					</p>
-				</div>
+				<div className="title"></div>
+				<div className="description"></div>
 			</div>
 		</MainLayout>
 	)
