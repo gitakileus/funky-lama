@@ -6,7 +6,7 @@ export default function Footer() {
 					<Link href='/term-conditions'>Terms and Conditions</Link>
 				</li> */}
 				<li>
-					<p>© 2022 FunkyLIamas</p>
+					<p>© 2022 Funky LIamas</p>
 				</li>
 				{/* <li>
 					<Link href='/policy'>Privacy Policy</Link>
