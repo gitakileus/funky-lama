@@ -22,8 +22,8 @@ const LazeLoft = () => {
 					<video ref={videoRef} className="video-background" muted>
 						<source src="/videos/laze-loft.mp4" type="video/mp4" />
 					</video>
-					<span className="place-text">PLACE FOR THE TEXT</span>
-					<span className="space-text">SPACE FOR THE TEXT</span>
+					<span className="place-text">Explore Funky Utilities</span>
+					<span className="space-text"></span>
 				</div>
 				<div className="title">LOREM IPSUM DOLOR SIT</div>
 				<div className="description">
