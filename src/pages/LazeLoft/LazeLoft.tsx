@@ -13,7 +13,7 @@ const LazeLoft = () => {
 		<MainLayout title="Laze Loft" className="laze-loft">
 			<div className="container">
 				<div className="title-logo">
-					<img src="/img/title-logo-new.png" alt="laze-loft" className="laze-loft-logo" />
+					<img src="/img/title-logo-new.gif" alt="laze-loft" className="laze-loft-logo" />
 					<img
 						src="/img/background-no-screen.png"
 						alt="background"
