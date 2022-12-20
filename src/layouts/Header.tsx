@@ -45,13 +45,11 @@ const Header = () => {
 					<nav>
 						<ul>
 							{menuLinks.map((menuLink, index) => (
-								<li key={index}>
-									<Link
-										to={menuLink.link}
-										className={`${location === menuLink.link ? 'active' : ''}`}
-									>
-										{menuLink.text}
-									</Link>
+								<li
+									key={index}
+									className={`${location === menuLink.link ? 'active' : 'gradient-border'}`}
+								>
+									<Link to={menuLink.link}>{menuLink.text}</Link>
 								</li>
 							))}
 						</ul>
@@ -59,25 +57,25 @@ const Header = () => {
 					<div className="social-links">
 						<ul>
 							<li>
-								<Link to="https://magiceden.com">
+								<a href="https://magiceden.com">
 									<div className="social-btn">
 										<MGIcon />
 									</div>
-								</Link>
+								</a>
 							</li>
 							<li>
-								<Link to="https://magiceden.com">
+								<a href="https://magiceden.com">
 									<div className="social-btn">
 										<TwitterIcon />
 									</div>
-								</Link>
+								</a>
 							</li>
 							<li>
-								<Link to="https://magiceden.com">
+								<a href="https://magiceden.com">
 									<div className="social-btn">
 										<DiscordIcon />
 									</div>
-								</Link>
+								</a>
 							</li>
 						</ul>
 					</div>
@@ -105,25 +103,25 @@ const Header = () => {
 							<div className="social-links">
 								<ul>
 									<li>
-										<Link to="https://magiceden.com">
+										<a href="https://magiceden.com">
 											<div className="social-btn">
 												<MGIcon />
 											</div>
-										</Link>
+										</a>
 									</li>
 									<li>
-										<Link to="https://magiceden.com">
+										<a href="https://magiceden.com">
 											<div className="social-btn">
 												<TwitterIcon />
 											</div>
-										</Link>
+										</a>
 									</li>
 									<li>
-										<Link to="https://magiceden.com">
+										<a href="https://magiceden.com">
 											<div className="social-btn">
 												<DiscordIcon />
 											</div>
-										</Link>
+										</a>
 									</li>
 								</ul>
 							</div>
