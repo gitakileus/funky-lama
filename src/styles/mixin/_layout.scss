@@ -46,9 +46,6 @@ header {
 					align-items: center;
 
 					li {
-						margin-right: 11px;
-						margin-left: 11px;
-
 						a {
 							font-family: 'DM Sans';
 							font-style: normal;
@@ -56,8 +53,6 @@ header {
 							font-size: 20.6579px;
 							line-height: 150%;
 							color: #323232;
-							padding-right: 11px;
-							padding-left: 11px;
 							text-transform: uppercase;
 
 							&.active {
@@ -183,6 +178,11 @@ footer {
 		padding-bottom: 27px;
 
 		li {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 100%;
+
 			a,
 			p {
 				font-family: 'DM Sans';
@@ -190,12 +190,30 @@ footer {
 				font-weight: 700;
 				font-size: 20px;
 				line-height: 150%;
-				text-decoration-line: underline;
+				text-decoration-line: none;
 				color: #6c5f4c;
 			}
 
 			p {
 				text-decoration: none;
+			}
+
+			div {
+				margin-left: auto;
+				margin-right: auto;
+				display: flex;
+				flex-wrap: wrap;
+				gap: 16px;
+				a {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					gap: 4px;
+					transition: all 0.15s ease-in-out 0.15s;
+					&:hover {
+						opacity: 0.7;
+					}
+				}
 			}
 		}
 
@@ -250,55 +268,53 @@ header .header-content .header-right nav ul li {
 	letter-spacing: 0.5px;
 	text-transform: uppercase;
 	border: 1px solid transparent;
+	width: 146px;
 
 	&.active {
+		text-align: center;
 		color: #e83a63 !important;
 		border-radius: 0px;
 		border: 3px solid #e83a63;
 		box-shadow: 5px 5px #ccc4b9;
+
+		svg {
+			display: none;
+		}
+	}
+
+	&.red-border {
+		--border-width: 0.2px;
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: transparent;
+
+		svg {
+			display: unset;
+			position: absolute;
+			z-index: -10;
+			left: -2px;
+			top: -2px;
+			fill: none;
+			stroke: rgb(236, 7, 7);
+			stroke-dasharray: 150 480;
+			stroke-dashoffset: 150;
+			transition: 1s ease-in-out;
+		}
+
+		&:hover {
+			transition: 1s ease-in-out;
+		}
+
+		&:hover svg {
+			display: block;
+			stroke-dashoffset: -480;
+		}
 	}
 
 	a {
-		background-color: #fff0da;
-	}
-}
-
-.gradient-border:hover {
-	--border-width: 0.2px;
-	position: relative;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: transparent;
-
-	&::after {
-		position: absolute;
-		content: '';
-		top: -3px;
-		left: -3px;
-		z-index: -10;
-		width: calc(100% + 7px);
-		height: calc(100% + 6px);
-		background: linear-gradient(
-			60deg,
-			hsl(224, 85%, 66%),
-			hsl(269, 85%, 66%),
-			hsl(314, 85%, 66%),
-			hsl(359, 85%, 66%),
-			hsl(44, 85%, 66%),
-			hsl(89, 85%, 66%),
-			hsl(134, 85%, 66%),
-			hsl(179, 85%, 66%)
-		);
-		background-size: 200% 200%;
-		background-position: 0 50%;
-		animation: moveGradient 4s alternate infinite;
-	}
-}
-
-@keyframes moveGradient {
-	50% {
-		background-position: 100% 50%;
+		background-color: #f4ece2;
 	}
 }
 
@@ -315,10 +331,10 @@ header .header-content .header-right nav ul li {
 	border: 3px solid #e83a63;
 	letter-spacing: 2px;
 	box-shadow: 5px 5px #ccc4b9;
-	transition: all .15s ease-in-out .15s;
+	transition: all 0.15s ease-in-out 0.15s;
 }
 
-.home .banner-title:hover { 
+.home .banner-title:hover {
 	cursor: pointer;
 	transform: translateY(5px);
 	box-shadow: 0px 0px;
@@ -345,4 +361,8 @@ footer {
 	color: #585553;
 	font-size: 17px;
 	letter-spacing: 0.5px;
+}
+
+footer ul li div a svg {
+	fill: #585553;
 }
