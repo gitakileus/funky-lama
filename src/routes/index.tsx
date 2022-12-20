@@ -8,7 +8,7 @@ const Router = () => {
 		<Routes>
 			<Route path="/" element={<Home />} />
 			<Route path="/laze-loft" element={<LazeLoft />} />
-			<Route path="funky-boxes" element={<FunkyBoxes />} />
+			<Route path="/funky-boxes" element={<FunkyBoxes />} />
 		</Routes>
 	)
 }

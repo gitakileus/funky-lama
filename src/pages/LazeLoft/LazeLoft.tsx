@@ -22,7 +22,7 @@ const LazeLoft = () => {
 					<video ref={videoRef} className="video-background" muted>
 						<source src="/videos/laze-loft.mp4" type="video/mp4" />
 					</video>
-					<span className="place-text">Explore Funky Utilities</span>
+					<span className="place-text glitch">Explore Funky Utilities</span>
 					<span className="space-text"></span>
 				</div>
 				<div className="title"></div>
