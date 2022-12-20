@@ -60,21 +60,21 @@ const Header = () => {
 						<ul>
 							<li>
 								<Link to="https://magiceden.com">
-									<div>
+									<div className="social-btn">
 										<MGIcon />
 									</div>
 								</Link>
 							</li>
 							<li>
 								<Link to="https://magiceden.com">
-									<div>
+									<div className="social-btn">
 										<TwitterIcon />
 									</div>
 								</Link>
 							</li>
 							<li>
 								<Link to="https://magiceden.com">
-									<div>
+									<div className="social-btn">
 										<DiscordIcon />
 									</div>
 								</Link>
@@ -106,21 +106,21 @@ const Header = () => {
 								<ul>
 									<li>
 										<Link to="https://magiceden.com">
-											<div>
+											<div className="social-btn">
 												<MGIcon />
 											</div>
 										</Link>
 									</li>
 									<li>
 										<Link to="https://magiceden.com">
-											<div>
+											<div className="social-btn">
 												<TwitterIcon />
 											</div>
 										</Link>
 									</li>
 									<li>
 										<Link to="https://magiceden.com">
-											<div>
+											<div className="social-btn">
 												<DiscordIcon />
 											</div>
 										</Link>
