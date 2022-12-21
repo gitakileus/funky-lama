@@ -166,21 +166,23 @@ footer {
 	justify-content: center;
 	margin-top: auto;
 	width: 100%;
-	background-color: #fae8c7;
+	background-color: #e1d7ca;
 
 	ul {
 		display: flex;
 		// align-items: center;
 		width: fit-content;
-		margin-left: 40px;
 		width: 100%;
-		padding-top: 16px;
-		padding-bottom: 27px;
+		padding-left: 40px;
+		background-color: transparent;
+		padding-bottom: 20px;
+		padding-top: 20px;
+		position: relative;
 
 		li {
 			display: flex;
 			align-items: center;
-			justify-content: center;
+			justify-content: flex-start;
 			width: 100%;
 
 			a,
@@ -213,6 +215,37 @@ footer {
 					&:hover {
 						opacity: 0.7;
 					}
+				}
+			}
+		}
+
+		.quick-link {
+			position: absolute;
+			width: max-content;
+			display: flex;
+			left: 0;
+			top: 0;
+			padding-top: 23px;
+			padding-bottom: 20px;
+			width: 100%;
+			gap: 20px;
+			justify-content: center;
+			align-items: center;
+
+			a {
+				display: flex;
+				align-items: center;
+				color: #585553;
+				font-size: 17px;
+				letter-spacing: 0.5px;
+				transition: all 0.15s ease-in-out;
+
+				svg {
+					fill: #585553;
+				}
+
+				&:hover {
+					opacity: 0.75;
 				}
 			}
 		}
@@ -344,25 +377,4 @@ header .header-content .header-right nav ul li {
 	color: #585553;
 	font-weight: 500;
 	letter-spacing: 0.5px;
-}
-
-/*Footer Style*/
-footer {
-	background-color: #e1d7ca;
-}
-
-.home footer ul {
-	background-color: transparent;
-	padding-bottom: 20px;
-	padding-top: 20px;
-}
-
-.home footer ul li p {
-	color: #585553;
-	font-size: 17px;
-	letter-spacing: 0.5px;
-}
-
-footer ul li div a svg {
-	fill: #585553;
 }

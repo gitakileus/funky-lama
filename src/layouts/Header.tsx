@@ -50,8 +50,8 @@ const Header = () => {
 									className={`${location === menuLink.link ? 'active' : 'red-border'}`}
 								>
 									<svg width="150px" height="35px" viewBox="0 0 150 35">
-										<polyline points="149,1 149,34 1,34 1,1 149,1" stroke-width="2" />
-										<polyline points="149,1 149,34 1,34 1,1 149,1" stroke-width="2" />
+										<polyline points="149,1 149,34 1,34 1,1 149,1" strokeWidth="2" />
+										<polyline points="149,1 149,34 1,34 1,1 149,1" strokeWidth="2" />
 									</svg>
 									<Link to={menuLink.link}>{menuLink.text}</Link>
 								</li>
