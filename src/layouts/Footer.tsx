@@ -15,6 +15,26 @@ export default function Footer() {
 				</li> */}
 				<li>
 					<p>© 2022 Funky LIamas</p>
+					{location.pathname === '/laze-loft' && (
+						<div className="quick-link-sm">
+							<Link to="/laze-earn">
+								<MoneyIcon />
+								<p>Laze and Earn</p>
+							</Link>
+							<Link to="/raid-earn">
+								<PaidIcon />
+								<p>Raid and Earn</p>
+							</Link>
+							<Link to="/funky-boxes">
+								<BoxIcon />
+								<p>Funky Boxes</p>
+							</Link>
+							<Link to="/funky-slots">
+								<CategoryIcon />
+								<p>Funky Slots</p>
+							</Link>
+						</div>
+					)}
 				</li>
 				{location.pathname === '/laze-loft' && (
 					<div className="quick-link">
