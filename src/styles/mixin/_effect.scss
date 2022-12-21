@@ -124,4 +124,37 @@ h1.glitch:after {
 	}
 }
 
+.menu-item {
+	position: relative;
+	margin: auto;
 
+	&:hover::before {
+		content: '';
+		position: absolute;
+		top: -3px;
+		left: -3px;
+		right: -3px;
+		bottom: -3px;
+		border: 3px solid #e83a63;
+		transition: all 0.5s;
+		animation: clippath 1.5s forwards linear;
+	}
+}
+
+@keyframes clippath {
+	0% {
+		clip-path: inset(0 0 0 95%);
+	}
+	25% {
+		clip-path: inset(95% 0 0 0);
+	}
+	50% {
+		clip-path: inset(0 95% 0 0);
+	}
+	75% {
+		clip-path: inset(0 0 95% 0);
+	}
+	100% {
+		clip-path: inset(0 0 94% 0);
+	}
+}

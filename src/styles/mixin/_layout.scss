@@ -355,7 +355,7 @@ header .header-content .header-right nav ul li {
 	letter-spacing: 0.5px;
 	text-transform: uppercase;
 	border: 1px solid transparent;
-	width: 146px;
+	padding: 4px 16px 4px 16px;
 
 	&.active {
 		text-align: center;
@@ -366,37 +366,6 @@ header .header-content .header-right nav ul li {
 
 		svg {
 			display: none;
-		}
-	}
-
-	&.red-border {
-		--border-width: 0.2px;
-		position: relative;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		background-color: transparent;
-
-		svg {
-			display: unset;
-			position: absolute;
-			z-index: -10;
-			left: -3px;
-			top: -3px;
-			fill: none;
-			stroke: #e83a63;
-			stroke-dasharray: 150 480;
-			stroke-dashoffset: 150;
-			transition: 1.5s ease-in-out;
-		}
-
-		&:hover {
-			transition: 1s ease-in-out;
-		}
-
-		&:hover svg {
-			display: block;
-			stroke-dashoffset: -217;
 		}
 	}
 

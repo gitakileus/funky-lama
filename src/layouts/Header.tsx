@@ -47,11 +47,8 @@ const Header = () => {
 							{menuLinks.map((menuLink, index) => (
 								<li
 									key={index}
-									className={`${location === menuLink.link ? 'active' : 'red-border'}`}
+									className={`${location === menuLink.link ? 'active' : 'menu-item'}`}
 								>
-									<svg width="150px" height="37px" viewBox="0 0 150 37">
-										<polyline points="149,1 149,36 1,36 1,1 149,1" strokeWidth="3" />
-									</svg>
 									<Link to={menuLink.link}>{menuLink.text}</Link>
 								</li>
 							))}
