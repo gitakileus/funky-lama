@@ -8,18 +8,18 @@ const Router = () => {
 	const location = useLocation()
 	console.log(location)
 	return (
-		// <PageTransition
-		// 	preset="moveToLeftFromRight"
-		// 	transitionKey={location.pathname}
-		// 	enterAnimation={''}
-		// 	exitAnimation={''}
-		// >
-			<Routes>
+		<PageTransition
+			preset={'roomToBottom'}
+			transitionKey={location.pathname}
+			enterAnimation={''}
+			exitAnimation={''}
+		>
+			<Routes location={location}>
 				<Route path="/" element={<Home />} />
 				<Route path="/laze-loft" element={<LazeLoft />} />
 				<Route path="/funky-boxes" element={<FunkyBoxes />} />
 			</Routes>
-		// </PageTransition>
+		</PageTransition>
 	)
 }
 

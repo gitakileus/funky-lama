@@ -6,10 +6,15 @@
 @import "./mixin/layout";
 @import "./mixin/variant";
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: "DM sans";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100%;
 }
 
 * {
