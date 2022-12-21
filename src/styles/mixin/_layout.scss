@@ -190,10 +190,10 @@ footer {
 				font-family: 'DM Sans';
 				font-style: normal;
 				font-weight: 700;
-				font-size: 20px;
-				line-height: 150%;
+				color: #585553;
+				font-size: 17px;
+				letter-spacing: 0.5px;
 				text-decoration-line: none;
-				color: #6c5f4c;
 			}
 
 			p {
@@ -243,9 +243,9 @@ footer {
 			align-items: center;
 			font-family: 'DM Sans';
 			font-style: normal;
-			font-weight: 700;
-			font-size: 20px;
-			line-height: 150%;
+			color: #585553;
+			font-size: 17px;
+			letter-spacing: 0.5px;
 			text-decoration-line: none;
 
 			a {
@@ -258,6 +258,8 @@ footer {
 
 				svg {
 					fill: #585553;
+					width: 18px;
+					height: 18px;
 				}
 
 				&:hover {

@@ -14,7 +14,7 @@ export default function Footer() {
 					<Link href='/term-conditions'>Terms and Conditions</Link>
 				</li> */}
 				<li>
-					<p>© 2022 Funky LIamas</p>
+					<p>2022 Funky LIamas</p>
 					{location.pathname === '/laze-loft' && (
 						<div className="quick-link-sm">
 							<Link to="/laze-earn">
