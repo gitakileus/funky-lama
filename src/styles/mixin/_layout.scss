@@ -327,13 +327,13 @@ header .header-content .header-right nav ul li {
 			display: unset;
 			position: absolute;
 			z-index: -10;
-			left: -2px;
-			top: -2px;
+			left: -3px;
+			top: -3px;
 			fill: none;
-			stroke: rgb(236, 7, 7);
+			stroke: #e83a63;
 			stroke-dasharray: 150 480;
 			stroke-dashoffset: 150;
-			transition: 1s ease-in-out;
+			transition: 1.5s ease-in-out;
 		}
 
 		&:hover {
