@@ -25,8 +25,8 @@ const LazeLoft = () => {
 					<span className="place-text glitch">Explore Funky Utilities</span>
 					<span className="space-text"></span>
 				</div>
-				<div className="title"></div>
-				<div className="description"></div>
+				{/* <div className="title"></div> */}
+				{/* <div className="description"></div> */}
 			</div>
 		</MainLayout>
 	)

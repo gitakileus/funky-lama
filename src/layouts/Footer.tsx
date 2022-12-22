@@ -13,10 +13,11 @@ export default function Footer() {
 				{/* <li>
 					<Link href='/term-conditions'>Terms and Conditions</Link>
 				</li> */}
-				<li>
-					<p>2022 Funky LIamas</p>
-					{location.pathname === '/laze-loft' && (
-						<div className="quick-link-sm">
+			
+				{location.pathname === '/laze-loft' ? (
+					<li  className="quick-link-sm">
+						<p className='title'>2022 Funky LIamas</p>
+						<div>
 							<Link to="/laze-earn">
 								<MoneyIcon />
 								<p>Laze and Earn</p>
@@ -34,8 +35,12 @@ export default function Footer() {
 								<p>Funky Slots</p>
 							</Link>
 						</div>
+						</li>
+					) : (
+						<li>
+							<p className='title'>2022 Funky LIamas</p>
+						</li>
 					)}
-				</li>
 				{location.pathname === '/laze-loft' && (
 					<div className="quick-link">
 						<Link to="/laze-earn">

@@ -137,7 +137,7 @@ h1.glitch:after {
 		bottom: -3px;
 		border: 3px solid #e83a63;
 		transition: all 0.5s;
-		animation: clippath 1.5s forwards linear;
+		animation: clippath 1.5s forwards ease-out;
 	}
 }
 
