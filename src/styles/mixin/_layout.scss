@@ -1,5 +1,10 @@
 @import 'styles/mixin/media';
 
+.main {
+	overflow-y: scroll;
+	height: 100vh;
+}
+
 header {
 	position: relative;
 	z-index: 99;

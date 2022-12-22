@@ -12,14 +12,14 @@ const MainLayout = (props: Props) => {
 	const { title, className = '', children } = props
 
 	return (
-		<>
+		<div className="main">
 			<ReactHelmet>
 				<title>{title}</title>
 			</ReactHelmet>
 			<Header />
 			<main className={className}>{children}</main>
 			<Footer />
-		</>
+		</div>
 	)
 }
 

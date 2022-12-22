@@ -5,8 +5,7 @@ import FunkyBoxes from 'pages/FunkyBoxes'
 import { PageTransition } from '@steveeeie/react-page-transition'
 
 const Router = () => {
-	const location = useLocation()
-	console.log(location)
+	const location = useLocation();
 	return (
 		<PageTransition
 			preset={'roomToBottom'}
