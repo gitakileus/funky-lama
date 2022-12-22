@@ -8,7 +8,7 @@ const Router = () => {
 	const location = useLocation();
 	return (
 		<PageTransition
-			preset={'roomToBottom'}
+			preset={'moveToLeftUnfoldRight'}
 			transitionKey={location.pathname}
 			enterAnimation={''}
 			exitAnimation={''}

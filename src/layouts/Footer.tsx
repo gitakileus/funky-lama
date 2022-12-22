@@ -38,7 +38,7 @@ export default function Footer() {
 						</li>
 					) : (
 						<li>
-							<p className='title'>2022 Funky LIamas</p>
+							<p className='title'>© 2022 Funky LIamas</p>
 						</li>
 					)}
 				{location.pathname === '/laze-loft' && (
