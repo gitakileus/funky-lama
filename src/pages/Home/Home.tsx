@@ -13,32 +13,32 @@ const Home = () => {
 							<img
 								src="/img/title-logo.png"
 								title="Funky Llamas - Laze, Party and Get High"
-								alt=""
+								alt="funkyLlama"
 							/>
 						</div>
 						<div className="liamas-content">
 							<div className="img-box">
-								<img src="/img/liamas-5.png" className="img-origin" alt="" />
-								<img src="/img/liamas-5-h.png" className="img-hover" alt="" />
+								<img src="/img/liamas-5.png" className="img-origin" alt="liamas" />
+								<img src="/img/liamas-5-h.png" className="img-hover" alt="liamas" />
 							</div>
 							<div className="img-box">
-								<img src="/img/liamas-4.png" className="img-origin" alt="" />
-								<img src="/img/liamas-4-h.png" className="img-hover" alt="" />
+								<img src="/img/liamas-4.png" className="img-origin" alt="liamas" />
+								<img src="/img/liamas-4-h.png" className="img-hover" alt="liamas" />
 							</div>
 							<div className="img-box">
-								<img src="/img/liamas-3.png" className="img-origin" alt="" />
-								<img src="/img/liamas-3-h.png" className="img-hover" alt="" />
+								<img src="/img/liamas-3.png" className="img-origin" alt="liamas" />
+								<img src="/img/liamas-3-h.png" className="img-hover" alt="liamas" />
 							</div>
 							<div className="img-box">
-								<img src="/img/liamas-2.png" className="img-origin" alt="" />
-								<img src="/img/liamas-2-h.png" className="img-hover" alt="" />
+								<img src="/img/liamas-2.png" className="img-origin" alt="liamas" />
+								<img src="/img/liamas-2-h.png" className="img-hover" alt="liamas" />
 							</div>
 							<div className="img-box">
-								<img src="/img/liamas-1.png" className="img-origin" alt="" />
-								<img src="/img/liamas-1-h.png" className="img-hover" alt="" />
+								<img src="/img/liamas-1.png" className="img-origin" alt="liamas" />
+								<img src="/img/liamas-1-h.png" className="img-hover" alt="liamas" />
 							</div>
 							<span className="hi-there">
-								<img src="/img/hi.svg" alt="" />
+								<img src="/img/hi.svg" alt="hi" />
 							</span>
 						</div>
 						<p className="banner-title">Funkiest NFT Collection</p>

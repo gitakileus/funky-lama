@@ -25,10 +25,10 @@ const FunkyBox = ({ box, isOpen, onClick }: Props) => {
 
 	return (
 		<div className="box">
-			<img src={imageUrl} alt="" className="card" />
+			<img src={imageUrl} alt="card" className="card" />
 			<div className="profile">
 				<div className="solana-logo">
-					<img src={SolanaIcon} alt="" width="40px" height="40px" />
+					<img src={SolanaIcon} alt="solana-icon" width="40px" height="40px" />
 				</div>
 				<span>{value}</span>
 				{!isConnected ? (

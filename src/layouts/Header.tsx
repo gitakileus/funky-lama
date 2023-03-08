@@ -37,7 +37,7 @@ const Header = () => {
 				<div className="header-left">
 					<Link to="/">
 						<div className="logo">
-							<img src="/img/logo.svg" alt="" />
+							<img src="/img/logo.svg" alt="logo" />
 						</div>
 					</Link>
 				</div>

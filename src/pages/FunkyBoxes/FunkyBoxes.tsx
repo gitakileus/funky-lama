@@ -178,7 +178,7 @@ const FunkyBoxes = () => {
 					<div className="recent-opened-boxes">
 						{recentOpens.map((item, index) => (
 							<div key={index}>
-								<img src={boxes[item.boxId].imageUrl} alt="" width={54} height={54} />
+								<img src={boxes[item.boxId].imageUrl} alt="recent-image" width={54} height={54} />
 								<p>
 									{shortenAddress(item.walletAddress)} opened {item.betAmount} SOL and won{' '}
 									{item.winAmount} SOL
@@ -193,7 +193,7 @@ const FunkyBoxes = () => {
 					<div className="recent-opened-boxes">
 						{yourOpens.map((item, index) => (
 							<div key={index}>
-								<img src={boxes[item.boxId].imageUrl} alt="" width={54} height={54} />
+								<img src={boxes[item.boxId].imageUrl} alt="recent-opened-image" width={54} height={54} />
 								<p>
 									{shortenAddress(item.walletAddress)} opened {item.betAmount} SOL and won{' '}
 									{item.winAmount} SOL
